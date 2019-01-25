@@ -121,3 +121,11 @@ h3{
   color: #ff571a;
 }
 
+#secret{
+  border: 1px solid black;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding: 10px;
+}
