@@ -31,6 +31,12 @@ header{
   padding: 8px;
 }
 
+#noMore{
+  background-color: #800080;
+  color: #ccff66;
+  box-shadow: 5px 5px #bab86c;
+}
+
 #recipe{
   background-color: #864747;
   color: #ffffff;
