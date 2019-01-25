@@ -19,7 +19,7 @@ header{
   opacity: 0.8;
 }
 
-#happy, #noMore{
+#happy, #noMore, #recipe, #fortune{
   background-color: rosybrown;
   border-radius: 10px;
   box-shadow: 5px 5px #e3eaa7;
@@ -34,14 +34,13 @@ header{
 #recipe{
   background-color: #864747;
   color: #ffffff;
-  border-radius: 10px;
-  box-shadow: 5px 5px #cccccc;
-  text-align: center;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  padding: 8px;
+  box-shadow: 5px 5px #cccccc;  
+}
+
+#fortune{
+  background-color: red;
+  color: gold;
+  box-shadow: 5px 5px gold;
 }
 
 .mix{

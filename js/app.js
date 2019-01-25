@@ -70,10 +70,20 @@ function getRecipe(){
 var myQuote = "Our lives are defined by opportunities; even the ones we miss.";
 
 
-//8. Say It again, Randomly
-/*Create a function that will generate a random quote from the variable below after clicking on the button.*/
+//8. Fortune Cookie
+/*Add an event listener to the `fortune` button that will generate a random message in the `showFortune` h3 element after clicking on the button*/
 
-var quotes = ["It's a funny thing about comin' home. Looks the same, smells the same, feels the same. You'll realize what's changed is you.", "Momma? Momma? Some days, I feel different than the day before.", "Some people, were born to sit by a river. Some get struck by lightning. Some have an ear for music. Some are artists. Some swim. Some know buttons. Some know Shakespeare. Some are mothers. And some people, dance.", "For what it's worth, it's never too late to be whoever you want to be."];
+var messages = ["That wasn't chicken.", "The fortune you seek is in another cookie.", "Tell your friends about DevLeague Prep.", "You will be doing many events tonight.", "Don't let statistics do a number on you.", "Buy your instructor a drink and receive double fortune.", "Is a turtle without a shell naked or homeless?"];
+
+fortune.addEventListener('click', getMessage);
+
+function getMessage(){
+    var random = Math.floor(Math.random()* messages.length);
+    var ranMsg = messages[random];
+    showFortune.innerHTML = ranMsg;
+}
+
+
 
 
 
