@@ -10,12 +10,19 @@ The function will add the following content inside the paragraph with the id of 
 
 var bliss = "Let's put some happy little bushes on the other side now. Anything you want to do you can do here. Trees cover up a multitude of sins. If you don't like it - change it. It's your world. Maybe there's a happy little waterfall happening over here."
 
+function moreTrees(){
+    nirvana.innerHTML = bliss;
+}
 
-
-//2. HTTP
-/*Create a function named `lessContent` that will initiate the `Show Less` link after clicking on it.
+//2. Less is More
+/*Create a function named `lessContent` that will trigger the button after clicking on it.
 
 The function will hide the contents in the pargraph with the id of `less` after clicking on the `Show Less` link.*/
+
+function lessContent(){
+    less.style.display = 'none';
+}
+
 
 
 //3. Tacocat, The Original Palindrome King
