@@ -100,17 +100,17 @@ bio.addEventListener('click', addProfile);
 function addProfile(){
     var nameElem = document.createElement('div');
     nameElem.id = 'profileName';
-    nameElem.innerHTML = grimace.name;
+    nameElem.innerHTML = 'Name: ' + grimace.name;
     bio.appendChild(nameElem);
 
     var signElem = document.createElement('div');
     signElem.id = 'profileSign';
-    signElem.innerHTML = grimace.sign;
+    signElem.innerHTML = 'Sign: ' + grimace.sign;
     bio.appendChild(signElem);
 
     var hobbyElem = document.createElement('div');
     hobbyElem.id = 'profileHobby';
-    hobbyElem.innerHTML = grimace.hobbies.toString('');
+    hobbyElem.innerHTML = 'Hobbies: ' + grimace.hobbies.toString('');
     bio.appendChild(hobbyElem);
 }
 
