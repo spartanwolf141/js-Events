@@ -3,7 +3,7 @@
 
 //1. There are no mistakes, only happy accidents.
 
-/*Create a function named `moreTrees` that will invoke the function after clicking on it.
+/*Create a function named `moreTrees` that will invoke the function after clicking on the button.
 
 The function will add the following content inside the paragraph with the id of `nirvana`.
 */
@@ -15,37 +15,45 @@ function moreTrees(){
 }
 
 //2. Less is More
-/*Create a function named `lessContent` that will trigger the button after clicking on it.
+/*Create a function named `lessContent` that will invoke the function after clicking on the button.
 
-The function will hide the contents in the pargraph with the id of `less` after clicking on the `Show Less` link.*/
+The function will hide the contents in the pargraph with the id of `less`.*/
 
 function lessContent(){
     less.style.display = 'none';
 }
 
-
-//3. Edward(エドワード Edowādo)
-/*Create a function named `boom` that will change the text in the paragraph of `worm` after hovering over it. Use the style guide below.
+//3. Edward (エドワード)
+/*Create a function named `bling` that will change the text in the paragraph of `worm` after hovering over it. Use the style guide below.
 
 Style Guide:
 font size: 28px
 font color: #33cc33
-border: 2px dotted #B22222
+border: 3px dotted rosybrown
 padding: 10px
 */
 
-function boom(){
+function bling(){
     worm.style.fontSize = '28px';
     worm.style.color = '#33cc33';
-    worm.style.border = '2px dotted #B22222';
+    worm.style.border = '3px dotted rosybrown';
     worm.style.padding = '10px';
 }
 
-
 //4. Beats Beet Cake
-/*Create a variable name menuItems and assign it an array of three of your favorite items at McDonald's.
+/*Add an event listener to the `recipe` button that will display the missing ingredient in the paragraph of `ingredient` after clicking on the button*/
 
-Next, create a function named valueMenu that will display your favorite items in the paragraph the the id of `menu` after clicking on the showMenu paragraph.*/
+var missing = "1 Big ol' beet";
+
+recipe.addEventListener('click', getRecipe);
+
+function getRecipe(){
+        var liElem = document.createElement('li');
+        liElem.className = 'mix';
+        liElem.innerHTML = missing
+        ingredient.appendChild(liElem)
+}
+
 
 
 //5. Gin.
