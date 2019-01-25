@@ -24,9 +24,22 @@ function lessContent(){
 }
 
 
+//3. Edward(エドワード Edowādo)
+/*Create a function named `boom` that will change the text in the paragraph of `worm` after hovering over it. Use the style guide below.
 
-//3. Tacocat, The Original Palindrome King
-/*Create a function named `zoom` that will increase the font size of the paragraph with the id of `biggie` after hovering your mouse over it. Increae the font size to 150%*/
+Style Guide:
+font size: 28px
+font color: #33cc33
+border: 2px dotted #B22222
+padding: 10px
+*/
+
+function boom(){
+    worm.style.fontSize = '28px';
+    worm.style.color = '#33cc33';
+    worm.style.border = '2px dotted #B22222';
+    worm.style.padding = '10px';
+}
 
 
 //4. McDonalds
