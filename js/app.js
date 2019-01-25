@@ -1,9 +1,9 @@
-//Make this page come alive using events or event listeners for the exercises below.
+//Make this page sing using events or event listeners for the exercises below.
 
 
 //1. There are no mistakes, only happy accidents.
 
-/*Create a function named `moreTrees` that will trigger the button after clicking on it.
+/*Create a function named `moreTrees` that will invoke the function after clicking on it.
 
 The function will add the following content inside the paragraph with the id of `nirvana`.
 */
