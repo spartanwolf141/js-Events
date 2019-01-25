@@ -50,10 +50,9 @@ recipe.addEventListener('click', getRecipe);
 function getRecipe(){
         var liElem = document.createElement('li');
         liElem.className = 'mix';
-        liElem.innerHTML = missing
-        ingredient.appendChild(liElem)
+        liElem.innerHTML = missing;
+        ingredient.appendChild(liElem);
 }
-
 
 //5. Pug Life
 /*Add an event listener to the img element `puggy` that will rollover a new image after hovering over it.*/
@@ -61,20 +60,29 @@ function getRecipe(){
 // Use this for the new image:
 // 'https://media.giphy.com/media/12pJ8OxSWwO86Y/giphy.gif'
 
-
 puggy.addEventListener('mouseover', makeRain);
 
 function makeRain(){
     if(puggy.src === 'https://bit.ly/2RhOvm4'){
         puggy.src = 'https://media.giphy.com/media/12pJ8OxSWwO86Y/giphy.gif';
     }else{
-        puggy.src = 'https://bit.ly/2RhOvm4'
+        puggy.src = 'https://bit.ly/2RhOvm4';
     }
 }
 
 
-//6. Peanut Butter Cup Oreos
-/*Create a function `showPrice` that will add the price of `$5.55` inside the paragraph with the id `price` after hovering your mouse over the paragraph.*/
+//6. DevLeague Lunch Wagon
+/*Add an event listener to the `menu` div element that will display and hide the dessert item after clicking on 'Today's Special'*/
+
+menu.addEventListener('click', showDessert);
+
+function showDessert(){
+    if(dessert.style.display === 'block'){
+        dessert.style.display = 'none';
+    }else{
+        dessert.style.display = 'block';
+    }
+}
 
 
 //7. Mr. Buttons

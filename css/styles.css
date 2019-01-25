@@ -60,8 +60,6 @@ header{
   padding: 7px;
 }
 
-
-
 img{
   height: 250px;
   width: 250px;
@@ -103,4 +101,22 @@ h3{
   padding: 20px;
   color: #ffff99;
   background-image: url("https://www.habkorea.net/wp-content/uploads/2018/03/Incheon-festa-2018-KPOP-ikon.jpg");
+}
+
+.row{
+  border-bottom: 1px solid black;
+  margin: 20px;
+}
+
+.block2{
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+}
+
+#menu{
+  text-align: center;
+}
+#dessert{
+  display: none;
+  color: #ff571a;
 }
