@@ -70,7 +70,6 @@ function makeRain(){
     }
 }
 
-
 //6. DevLeague Lunch Wagon
 /*Add an event listener to the `menu` div element that will display and hide the dessert item after clicking on 'Today's Special'*/
 
@@ -85,11 +84,35 @@ function showDessert(){
 }
 
 
-//7. Mr. Buttons
-/*Add an Event Listener to the button that will display `myQuote` inside the paragraph with the id of `displayQuote` after the button is clicked.*/
+//7. The Purple Monster
+/*Add an event listener to the `bio` paragraph element that will display Grimace's name, sign and hobbies after clicking on the paragraph element. Hint, you'll need to create new elements for each object property. Apppend these new elements into the `bio` paragraph element.*/
 
-var myQuote = "Our lives are defined by opportunities; even the ones we miss.";
+var grimace = {
+    name: 'Grimace',
+    age: 47,
+    sign: 'Scorpio',
+    bloodtype: 'O postive',
+    hobbies: ['knitting', 'scrapbooking', 'mixed martial arts']
+};
 
+bio.addEventListener('click', addProfile);
+
+function addProfile(){
+    var nameElem = document.createElement('div');
+    nameElem.id = 'profileName';
+    nameElem.innerHTML = grimace.name;
+    bio.appendChild(nameElem);
+
+    var signElem = document.createElement('div');
+    signElem.id = 'profileSign';
+    signElem.innerHTML = grimace.sign;
+    bio.appendChild(signElem);
+
+    var hobbyElem = document.createElement('div');
+    hobbyElem.id = 'profileHobby';
+    hobbyElem.innerHTML = grimace.hobbies.toString('');
+    bio.appendChild(hobbyElem);
+}
 
 //8. Fortune Cookie
 /*Add an event listener to the `fortune` button that will generate a random message in the `showFortune` h3 element after clicking on the button*/
