@@ -3,13 +3,24 @@ body{
   font-size: 20px;
 }
 
-header, #footer{
+#headline{
+  color:#ff1a1a;
+  text-align: center;
+  font-family: 'Shrikhand', cursive;
+  font-size: 88px;
+}
+
+header{
   text-align: center;
   padding: 20px;
-  background-image: url("https://s-media-cache-ak0.pinimg.com/originals/6d/8e/67/6d8e675659aae9018119a26929acc773.jpg");
-
-  color: white;
+  background-image: url("https://www.habkorea.net/wp-content/uploads/2018/03/Incheon-festa-2018-KPOP-ikon.jpg");
+  background-repeat: no-repeat;
+  height: 1000px;
+  opacity: 0.8;
 }
+
+
+
 
 #happy, #noMore{
   background-color: rosybrown;
