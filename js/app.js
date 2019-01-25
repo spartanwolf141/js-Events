@@ -40,7 +40,7 @@ function bling(){
     worm.style.padding = '10px';
 }
 
-//4. Beats Beet Cake
+//4. Beet Cakes by Dre
 /*Add an event listener to the `recipe` button that will display the missing ingredient in the paragraph of `ingredient` after clicking on the button*/
 
 var missing = "1 Big ol' beet";
