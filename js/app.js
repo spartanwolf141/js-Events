@@ -55,9 +55,22 @@ function getRecipe(){
 }
 
 
+//5. Pug Life
+/*Add an event listener to the img element `puggy` that will rollover a new image after hovering over it.*/
 
-//5. Gin.
-/*Create a function named redFace that will change the paragraph text to red and a font size of 30px after clicking on the text.*/
+// Use this for the new image:
+// 'https://media.giphy.com/media/12pJ8OxSWwO86Y/giphy.gif'
+
+
+puggy.addEventListener('mouseover', makeRain);
+
+function makeRain(){
+    if(puggy.src === 'https://bit.ly/2RhOvm4'){
+        puggy.src = 'https://media.giphy.com/media/12pJ8OxSWwO86Y/giphy.gif';
+    }else{
+        puggy.src = 'https://bit.ly/2RhOvm4'
+    }
+}
 
 
 //6. Peanut Butter Cup Oreos
