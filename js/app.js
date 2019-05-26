@@ -8,12 +8,24 @@ The function will add the following content inside the paragraph with the id of 
 
 var bliss = "Let's put some happy little bushes on the other side now. Anything you want to do you can do here. Trees cover up a multitude of sins. If you don't like it - change it. It's your world. Maybe there's a happy little waterfall happening over here."
 
+function moreTrees(){
+var answ = document.getElementById('nirvana');
+answ.innerHTML = bliss;
+}
 
 //2. Less is More
 /*Create a function named `lessContent` that will invoke the function after clicking on the button.
 
 The function will hide the contents in the pargraph with the id of `less`.*/
 
+function lessContent(){
+    var hide = document.getElementById('less');
+    if (hide.style.display === "none") {
+        hide.style.display = "block";
+      } else {
+        hide.style.display = "none";
+      }
+}
 
 
 //3. Edward (エドワード)
@@ -25,15 +37,25 @@ font color: #33cc33
 border: 3px dotted rosybrown
 padding: 10px
 */
-
+function bling(){
+    worm.style.fontSize = '28px';
+    worm.style.color = '#33cc33';
+    worm.style.border = '3px dotted rosybrown';
+    worm.style.padding = '10px';
+}
 
 
 //4. Beet Cakes by Dre
 /*Add an event listener to the `recipe` button that will display the missing ingredient in the paragraph of `ingredient` after clicking on the button*/
 
 var missing = "1 Big ol' beet";
+recipe.addEventListner('click', getRecipe);
 
-
+function getRecipe(){
+  var liElem = document.createElement('li');
+  liElem.className = 'mix';
+  liElem.innerHTML = missing;
+  ingredient.appendChild(liElem);
 
 //5. Pug Life
 /*Add an event listener to the img element `puggy` that will rollover a new image after hovering over it.*/
