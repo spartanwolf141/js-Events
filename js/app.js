@@ -49,7 +49,7 @@ function bling(){
 /*Add an event listener to the `recipe` button that will display the missing ingredient in the paragraph of `ingredient` after clicking on the button*/
 
 var missing = "1 Big ol' beet";
-recipe.addEventListner('click', getRecipe);
+recipe.addEventListener('click', getRecipe);
 
 function getRecipe(){
   var liElem = document.createElement('li');
@@ -63,11 +63,28 @@ function getRecipe(){
 // Use this for the new image:
 // 'https://media.giphy.com/media/12pJ8OxSWwO86Y/giphy.gif'
 
+puggy.addEventListener('mouseover', showPug);
 
+function showPug(){
+    if(puggy.src === 'https://bit.ly/2RhOvm4'){
+        puggy.src = 'https://media.giphy.com/media/12pJ8OxSWwO86Y/giphy.gif';
+    }else{
+        puggy.src = 'https://bit.ly/2RhOvm4';
+    }
+}
 
 //6. DevLeague Lunch Wagon
 /*Add an event listener to the `menu` div element that will display and hide the dessert item after clicking on 'Today's Special'*/
+var Special = document.getElementById('menu');
+Special.addEventListner('click', showFood);
 
+function showFood(){
+  if(dessert.style.display === "block"){
+    dessert.style.display = "none";
+  }else{
+    dessert.style.display = "block";
+  }
+}
 
 
 //7. The Purple Monster
@@ -79,15 +96,45 @@ var grimace = {
     sign: 'Scorpio',
     bloodtype: 'O postive',
     hobbies: ['knitting', 'scrapbooking', 'mixed martial arts']
-};
+}
+
+bio.addEventListener('click', story);
+
+function story(){
+  var nameElem = document.createElement('div');
+    nameElem.id = 'profileName';
+    nameElem.innerHTML = 'Name: ' + grimace.name;
+    bio.appendChild(nameElem);
+
+    var signElem = document.createElement('div');
+    signElem.id = 'profileSign';
+    signElem.innerHTML = 'Sign: ' + grimace.sign;
+    bio.appendChild(signElem);
+
+    var hobbyElem = document.createElement('div');
+    hobbyElem.id = 'profileHobby';
+    hobbyElem.innerHTML = 'Hobbies: ' + grimace.hobbies.toString('');
+    bio.appendChild(hobbyElem);
+}
 
 
 //8. Fortune Cookie
 /*Add an event listener to the `fortune` button that will generate a random message in the `showFortune` h3 element after clicking on the button*/
 
 var messages = ["That wasn't chicken.", "The fortune you seek is in another cookie.", "Tell your friends about DevLeague Prep.", "You will be doing many events tonight.", "Don't let statistics do a number on you.", "Buy your instructor a drink and receive double fortune.", "Is a turtle without a shell naked or homeless?"];
+showFortune.addEventListener('click', future);
+
+function future(){
+  for(i = 0; i<messages.length; i++){
+    return showFortune.innerHTML = messages[i];
+  }
+}
 
 
 //9. Open Sesame
 /*Add an event listener to the `secret` input element that will capitalize letter inputs in the form. Hint, you'll be using the keyup event*/
+secret.addEventListener('keyup', pwdValidate);
 
+function pwdValidate(){
+    secret.value = secret.value.toUpperCase();
+}}
